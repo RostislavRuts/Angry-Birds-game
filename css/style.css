@@ -1,0 +1,101 @@
+body
+{
+	background: url(../images/0-start.jpg);
+}
+html
+{
+	width: 100%;
+	height: 100%;
+	user-select: none;
+}
+#play
+{
+	position: absolute;
+	top: 60%;
+	left: 5%;
+	cursor: pointer;
+}
+#playPage
+{
+	background: url(../images/fon.jpg) no-repeat fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	/* cursor: url(../images/cursor.cur), pointer; */
+}
+.pointView
+{
+ text-align: center;
+ color: red;
+ font-size: 22px;
+ font-weight: bold;
+ margin-top: -22px;
+}
+.gameOverBlock
+{
+	background: rgba(0, 0, 0, 0.7);
+	width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+}
+.score
+{
+	letter-spacing: normal;
+	font-weight: bold;
+}
+#restart, #gameOver
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	color: white;
+	background-color: rgba( 47, 174, 223, 0.7 );
+	transition: .2s linear;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+  	user-select: none;
+}
+#restart:hover
+{
+	font-weight: bold;
+	color: yellow;
+	background-color: green;
+	box-shadow: 2px 2px white, 4px 4px green;
+	top: -4px;
+	left: -4px;
+	/*box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;*/
+}
+#gameOver:hover
+{
+	font-weight: bold;
+	color: white;
+	background-color: maroon;
+	box-shadow: 2px 2px white, 4px 4px maroon;
+	top: -4px;
+	left: 4px;
+}
+#winPage
+{
+	background: url(../images/win.jpg) 100% 60%;
+}
+#losePage
+{
+	background: url(../images/lose.jpg) 100% 40%;
+}
+*:focus
+{
+	outline: none; border: none;
+}
+button:focus
+{
+	outline: none;
+}
+/*img.game-img{
+	transition: all 0.1s;
+}*/
